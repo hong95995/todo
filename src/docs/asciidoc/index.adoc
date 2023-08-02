@@ -1,0 +1,54 @@
+= TO DO
+:sectnums:
+:toc: left
+:toclevels: 4
+:toc-title: Table of Contents
+:source-highlighter: prettify
+
+9599562@gmail.com
+
+v1.0.0 2023.08.01
+
+***
+== TodoController
+=== 할 일 등록
+.curl-request
+include::{snippets}/post-todo/curl-request.adoc[]
+
+.http-request
+include::{snippets}/post-todo/http-request.adoc[]
+
+.request-fields
+include::{snippets}/post-todo/request-fields.adoc[]
+
+.http-response
+include::{snippets}/post-todo/http-response.adoc[]
+
+=== 할 일 수정
+
+.curl-request
+include::{snippets}/patch-todo/curl-request.adoc[]
+
+.http-request
+include::{snippets}/patch-todo/http-request.adoc[]
+
+.http-response
+include::{snippets}/patch-todo/http-response.adoc[]
+
+.httpie-request
+include::{snippets}/patch-todo/httpie-request.adoc[]
+
+.path-parameters
+include::{snippets}/patch-todo/path-parameters.adoc[]
+
+.request-body
+include::{snippets}/patch-todo/request-body.adoc[]
+
+.request-fields
+include::{snippets}/patch-todo/request-fields.adoc[]
+
+.response-body
+include::{snippets}/patch-todo/response-body.adoc[]
+
+.response-field
+include::{snippets}/patch-todo/response-fields.adoc[]

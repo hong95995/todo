@@ -28,19 +28,9 @@ public class TodoService {
         return findById(id);
     }
 
-    private Todo findById(long id) {
-        Optional<Todo> optionalTodo = repository.findById(id);
-        Todo finded = optionalTodo.orElseThrow(
-                () -> new BusinessLogicException(Exception.TODO_NOT_FOUND)
-        );
-
-        return finded;
-    }
-
     public List<Todo> searchTodos() {
         return repository.findAll();
     }
-
 
     public Todo updateTodo(Todo todo) {
         Todo finded = findById(todo.getId());
@@ -59,5 +49,14 @@ public class TodoService {
 
     public void deleteTodos() {
         repository.deleteAll();
+    }
+
+    private Todo findById(long id) {
+        Optional<Todo> optionalTodo = repository.findById(id);
+        Todo finded = optionalTodo.orElseThrow(
+                () -> new BusinessLogicException(Exception.TODO_NOT_FOUND)
+        );
+
+        return finded;
     }
 }
